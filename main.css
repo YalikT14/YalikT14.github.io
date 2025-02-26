@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFECD9;
+  color: #000000;
+}
+
+.btn-rounded {
+  border-radius: 20px; /* Ajusta el valor según lo redondeado que quieras los bordes */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Gradientes */
+.text-gradient {
+  background: linear-gradient(#8E2020, #E08C59);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-line {
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(#8E2020, #E08C59);
+  margin: 10px auto;
+}
+
+/* Botones */
+.btn-gradient {
+  background: #E08C59;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+.navbar-brand:hover {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #E08C59;
+}
+
+.navbar-toggler {
+  color:  #E08C59;
+}
+
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+.nav-link:hover {
+  color: #E08C59;
+}
+
+/* Secciones */
+section {
+  padding: 60px 0;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background-color: #FFECD9;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}

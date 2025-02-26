@@ -1,0 +1,138 @@
+.img-fluid{
+  border-radius: 20px;
+}
+
+.img-fluid-hero{
+  height: 90%;
+}
+
+.btn-custom{
+  background: rgba(255, 255, 255, 1) !important;
+  padding: 10px 26px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+  border-radius: 100px !important; /* Se puede simplificar */
+  overflow: hidden;
+}
+
+.btn-custom:hover {
+  opacity: 0.9;
+}
+
+.gradienteindex {
+  position: relative;
+  z-index: 0; /* Esto crea un contexto de apilamiento */
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-top: 60px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.gradienteindex::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%; /* Ajusta la altura según necesites */
+  background: linear-gradient(180deg, #8E2020, #E08C59);
+  border-radius: 30px;
+  z-index: -1; /* Se ubica detrás del contenedor (.gradienteindex) */
+}
+
+
+.titulo_hero{
+  color: rgba(34,29,27,1);
+}
+
+.texto_hero{
+  color: rgba(0,0,0,1);
+  text-align: left;
+}
+
+.btn1-custom {
+  background: rgba(255, 255, 255, 1);
+  padding: 2px 32px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+  border-radius: 100px; /* Se puede simplificar */
+  overflow: hidden;
+}
+
+.text-primary {
+  color: #121212 !important;
+  top: 16px;
+  left: 32px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600; /* 'SemiBold' es equivalente a 600 en CSS */
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn2-custom {
+  border-color: #ffffff;
+  width: 193px;
+  height: 54px;
+  padding: 2px 32px;
+  margin: 10px;
+  top: 0;
+  left: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.text-secondary {
+  color: #ffffff !important;
+  top: 16px;
+  left: 32px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+
+.opaco{
+  color: #757575;
+  font-weight: bold;
+}
+
+.card-img-top{
+  border-radius: 20px;
+}
+
+.margen-1{
+  padding-top: 25px;
+}
+.margen-2{
+  padding-bottom: 25px;
+}
+
+.beneficio {
+  width: 200px; /* Ancho fijo */
+  height: 100px; /* Alto fijo */
+  border-radius: 20px;
+  border: 1px solid #888888; /* Borde */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos verticalmente */
+  align-items: center;
+  justify-content: center;
+  margin: 20px; /* Espaciado entre columnas */
+}
+
+.gradient-line {
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(#8E2020, #E08C59);
+  margin: 5px auto;
+}
+
+.marcas{
+    display: flex;
+    flex-direction: column;  /* Esto coloca los spans uno encima del otro */
+    justify-content: center; /* Esto centra los elementos verticalmente */
+    align-items: center;     /* Esto centra los elementos horizontalmente */
+    height: 100%;            /* Asegúrate de que la columna tenga una altura definida para centrar verticalmente */
+}
