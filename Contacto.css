@@ -1,0 +1,221 @@
+html, body {
+    background-color: #FFECD9;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .contacto {
+      background-color: #FFECD9;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .contacto .overlap-wrapper {
+      background-color: #FFECD9;
+      width: 1440px;
+      height: 1024px;
+    }
+    
+    .contacto .overlap {
+      position: relative;
+      width: 1334px;
+      height: 1024px;
+    }
+    
+    .contacto .container {
+      position: absolute;
+      width: 949px;
+      height: 1024px;
+      top: 0;
+      left: 0;
+    }
+    
+    .contacto .form-wrapper {
+      position: absolute;
+      width: 756px;
+      height: 841px;
+      top: 183px;
+      left: 578px;
+    }
+    
+    .contacto .overlap-group {
+      position: relative;
+      width: 752px;
+      height: 841px;
+      border-radius: 30px;
+      background: linear-gradient(#8E2020, #E08C59);
+    }
+    
+    .contacto .heading {
+      position: absolute;
+      width: 596px;
+      top: 66px;
+      left: 78px;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 56px;
+      line-height: 56px;
+    }
+    
+    .contacto .paragraph {
+      position: absolute;
+      width: 589px;
+      top: 130px;
+      left: 82px;
+      font-family: "DM Sans", Helvetica, sans-serif;
+      line-height: 1.5;
+      color: #000000;
+  
+    }
+    
+    .contacto .form-inside {
+      display: inline-flex;
+      flex-direction: column;
+      height: 521px;
+      align-items: flex-start;
+      gap: 32px;
+      position: absolute;
+      top: 254px;
+      left: 78px;
+    }
+    
+    .contacto .form-columns {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 24px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .contacto .form-column {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .contacto .element {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .contacto .label {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: "SF Pro Display-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0.30px;
+      line-height: 12px;
+      white-space: nowrap;
+      
+    }
+    
+    .contacto .input-text {
+      position: relative;
+      width: 286px;
+      height: 72px;
+      border-radius: 6px;
+      background-color: #ffffff;
+    }
+    
+    .contacto .master-input-text {
+      height: 72px;
+      background-image: url(./img/input.svg);
+      background-size: 100% 100%;
+    }
+    
+    .contacto .input-left {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      top: 24px;
+      left: 24px;
+    }
+    
+    .contacto .input-placeholder {
+      position: relative;
+      width: fit-content;
+      font-family: "Roboto-Regular", Helvetica;
+      font-weight: 400;
+      color: #ADABC3;
+      font-size: 18px;
+      line-height: 18px;
+      white-space: nowrap;
+    }
+    
+    .contacto .input-left-wrapper {
+      height: 72px;
+      border-radius: 6px;
+      background-color: #ffffff;
+    }
+    
+    .contacto .master-input-text-wrapper {
+      position: relative;
+      width: 286px;
+      height: 72px;
+      border-radius: 6px;
+    }
+    
+    .contacto .text-area {
+      display: flex;
+      width: 596px;
+      align-items: flex-start;
+      padding: 24px 24px 100px;
+      position: relative;
+      flex: 0 0 auto;
+      border-radius: 6px;
+      background-color: #ffffff;
+    }
+    
+    .contacto .text-wrapper {
+      position: relative;
+      width: 368px;
+      margin-top: -1.00px;
+      font-family: "Roboto-Regular", Helvetica;
+      font-weight: 400;
+      color: #ADABC3;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 18px;
+      
+    }
+    
+    .contacto .master-primary {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 24px 36px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-bottom: -2.74px;
+      background-color: #ffffff;
+      border-radius: 100px;
+    }
+    
+    .contacto .button-text {
+      margin-top: -1.33px;
+      font-size: 16px;
+      position: relative;
+      width: fit-content;
+      font-family: "Open Sans-SemiBold", Helvetica;
+      font-weight: 600;
+      color: #000000;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    
+    

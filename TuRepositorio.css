@@ -1,0 +1,81 @@
+.gradiente {
+  position: relative;
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-top: 98px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.gradiente::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ajusta la altura como necesites */
+  background: linear-gradient(#8E2020, #E08C59);
+  border-radius: 20px;
+  z-index: 0; /* Envía el gradiente al fondo */
+}
+
+.profile-pic {
+  position: absolute;
+  top: -100px; /* Ajusta este valor para que la foto se superponga al gradiente */
+  z-index: 1; /* Asegura que la imagen esté por encima del gradiente */
+}
+
+.dropdown-toggle {
+  background: #121212;
+  color: #ffff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* Opcional: estilos para hover y focus */
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  background: #fff;
+}
+
+.col-with-gradient {
+  position: relative; /* Para posicionar el pseudo-elemento respecto a la columna */
+}
+
+.col-with-gradient:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px; /* Ancho del borde vertical (similar a la altura del .gradient-line, pero invertido) */
+  height: 100%; /* Se extiende a lo largo de toda la columna */
+  background: linear-gradient(#8E2020, #E08C59);
+}
+
+.seleccion {
+  background: #fff !important; /* Gris inicial */
+  color: #121212;
+  font-weight: bold;
+  padding: 10px 26px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+  border-radius: 20px !important;
+  overflow: hidden;
+  transition: background 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.seleccion:active, .seleccion:focus {
+  background: #121212 !important; /* Blanco cuando está activo o enfocado */
+  font-weight: bold;
+  color: #fff;
+}
+
+.seleccion:hover {
+  opacity: 0.9;
+}
+.margensote{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

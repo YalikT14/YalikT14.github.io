@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelu2 - Mascotas</title>
+    <link rel="icon" type="image/png" href="/images/Dan.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Inter&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="/main.css" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet">
+    <link href="/TuRepositorio.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid mx-5">
+            <a class="navbar-brand" href="/">
+                <img src="/img/pelu2.png" alt="Pelu2 Logo" width="75">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/TuRepositorio.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Mascotas.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Refugios.html">Coaches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contacto.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-custom" href="/Login.html">
+                    <span class="text-primary">Empieza Ahora</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <span class="gradiente"></span>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-3 position-relative d-flex justify-content-center">
+                <img class="img-fluid profile-pic" src="/img/FotoPerfil.png" alt="Profile Picture">
+            </div>
+            <div class="col-md-8">
+                <h3>Samuel Monroe</h3>
+                <p>Voluntario en el Refugio de Animales "Patas Felices"</p>
+            </div>
+            <div class="col-md">
+                <img class="img-fluid" src="/img/Compartir.png" alt="Share Icon">
+            </div>
+        </div>
+    </div>
+
+    <!-- Repositorio -->
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-md-3 col-with-gradient">
+                <!-- Loop through sidebarButtons -->
+                <button class="btn seleccion">
+                    <span>Editar Perfil</span>
+                </button>
+                <button class="btn seleccion">
+                    <span>Notificaciones</span>
+                </button>
+                <button class="btn seleccion">
+                    <span>Propuesta de Adopción</span>
+                </button>
+                <button class="btn seleccion">
+                    <span>Adopción</span>
+                </button>
+            </div>
+            <div class="col-md col-with-gradient">
+                <div class="row my-4">
+                    <div class="d-flex gap-2">
+                        <div class="dropdown">
+                            <button class="btn btn-gradient dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Selecciona una Categoría
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                                <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-gradient dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Selecciona una Categoría
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                                <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="/img/Refugio.png" alt="Historial">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <!-- Loop through contentImages.demos -->
+                            <div class="w-100"></div>
+                            <div class="col-md-6">
+                                <img class="img-fluid margensote" src="/img/Refugio1.png" alt="Demo 1">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid margensote" src="/img/Refugio2.png" alt="Demo 1">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid margensote" src="/img/Refugio3.png" alt="Demo 1">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid margensote" src="/img/Refugio4.png" alt="Demo 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Pelu2</h5>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="mx-auto">
+                        <li style="list-style-type: none;">
+                            <a href="/TuRepositorio.html">Classes</a>
+                        </li>
+                        <li style="list-style-type: none;">
+                            <a href="/Mascotas.html">Programs</a>
+                        </li>
+                        <li style="list-style-type: none;">
+                            <a href="/Refugios.html">Coaches</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="mx-auto">
+                        <li style="list-style-type: none;">
+                            <a href="/Contacto.html">Contacto</a>
+                        </li>
+                        <li style="list-style-type: none;">FAQ</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 marcas">
+                    <span>
+                        <img src="/img/GooglePlay.png" alt="PlayStore" width="100px">
+                    </span>
+                    <br>
+                    <span>
+                        <img src="/img/AppStore.png" alt="AppStore" width="100px">
+                    </span>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="d-flex justify-content-center">
+                    <p>© Pelu2 - 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
