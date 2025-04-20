@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="/images/Dan.png" sizes="32x32">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Inter&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <link href="/main.css" rel="stylesheet">
     <link href="/index.css" rel="stylesheet">
@@ -31,15 +32,23 @@
                         <a class="nav-link" href="/Mascotas.html">Mascotas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Refugios.html">Refugios</a>
+                        <a class="nav-link" href="/Refugios.html">Producto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <a class="btn btn-custom" href="/Login.html">
-                    <span class="text-primary">Empieza Ahora</span>
-                </a>
+                <div class="d-flex">
+                    <a href="/Login.html" class="btn btn-outline-dark me-2">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,63 +58,63 @@
             <div class="frame"></div>
             <p class="heading">
                 <!-- Loop through heading -->
-                Descubre Refugios <br> Cerca de Ti<br>
+                Descubre nuestros <br> Productos<br>
             </p>
             <p class="paragraph">
                 <!-- Loop through paragraph -->
-                Únete a nuestra plataforma para conectar mascotas <br> con sus nuevas familias<br>
+                Dale un gusto a tu mejor amigo <br> con lo que tenemos para ellos.<br>
             </p>
-            <a class="members">
+            <div class="members">
                 <!-- Loop through members -->
                 <div class="image-placeholder">
-                    <img class="image-icon" src="/img/Refugiorandom.png">
+                    <a href="/Productos1.html"><img class="image-icon" src="/img/Comidaperro.jpg">
                     <div class="overlay">
-                        <p class="author-name">Nombre del Refugio</p>
-                        <p class="description">Pequeña descripción del refugio</p>
-                    </div>
+                        <p class="author-name">Comida de Perro</p>
+                        <p class="description text-center">Para que coman los cánidos <br>(Cannis Lupus Familiaris)</p>
+                    </div></a>
                 </div>
                 <div class="image-placeholder">
-                    <img class="image-icon" src="/img/Refugiorandom.png">
+                    <a href="/Productos1.html"><img class="image-icon" src="/img/Comidagato.jpg">
                     <div class="overlay">
-                        <p class="author-name">Nombre del Refugio</p>
-                        <p class="description">Pequeña descripción del refugio</p>
-                    </div>
+                        <p class="author-name">Comida de gato</p>
+                        <p class="description text-center">Para que coman sus mininos <br>(Felis Catus)</p>
+                    </div></a>
                 </div>
                 <div class="image-placeholder">
-                    <img class="image-icon" src="/img/Refugiorandom.png">
+                    <a href="/Productos1.html"><img class="image-icon" src="/img/juguete1.jpg">
                     <div class="overlay">
-                        <p class="author-name">Nombre del Refugio</p>
-                        <p class="description">Pequeña descripción del refugio</p>
-                    </div>
+                        <p class="author-name">Chillones</p>
+                        <p class="description text-center">Estimula las mordidas y hacen <br>ruido chistoso</p>
+                    </div></a>
                 </div>
                 <div class="image-placeholder">
-                    <img class="image-icon" src="/img/Refugiorandom.png">
+                    <a href="/Productos1.html"><img class="image-icon" src="/img/juguete2.jpg">
                     <div class="overlay">
-                        <p class="author-name">Nombre del Refugio</p>
-                        <p class="description">Pequeña descripción del refugio</p>
-                    </div>
+                        <p class="author-name">Catnip</p>
+                        <p class="description text-center">Hierba de gato que hace que <br>se comporten raro <br>(No exceder su uso)</p>
+                    </div></a>
                 </div>
                 <div class="image-placeholder">
-                    <img class="image-icon" src="/img/Refugiorandom.png">
+                    <a href="/Productos1.html"><img class="image-icon" src="/img/aseo1.jpg">
                     <div class="overlay">
-                        <p class="author-name">Nombre del Refugio</p>
-                        <p class="description">Pequeña descripción del refugio</p>
-                    </div>
+                        <p class="author-name">Shampoo de Baño Seco</p>
+                        <p class="description text-center">Para que tu mascota se <br>tenga un aseo digno <br>sin necesidad de H2O</p>
+                    </div></a>
                 </div>
                 <div class="image-placeholder">
-                    <img class="image-icon" src="/img/Refugiorandom.png">
+                    <a href="/Productos1.html"><img class="image-icon" src="/img/aseo2.jpg">
                     <div class="overlay">
-                        <p class="author-name">Nombre del Refugio</p>
-                        <p class="description">Pequeña descripción del refugio</p>
-                    </div>
+                        <p class="author-name">Perfume de Mascotas</p>
+                        <p class="description text-center">Para que tus mascotas <br>tengan un gran olor <br>en todo momento</p>
+                    </div></a>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
     <br>
     <br>
     <br>
-    <br>
+    <hr>
 
     <!-- Footer -->
     <footer>
@@ -123,7 +132,7 @@
                             <a href="/Mascotas.html">Mascotas</a>
                         </li>
                         <li style="list-style-type: none;">
-                            <a href="/Refugios.html">Refugios</a>
+                            <a href="/Refugios.html">Productos</a>
                         </li>
                     </ul>
                 </div>

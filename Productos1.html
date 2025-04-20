@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del Producto - Mi Tienda</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="/main.css" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet">
+    <style>
+        .product-gallery img {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .product-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .main-image {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .badge-custom {
+            font-size: 0.8rem;
+            background-color: #dc3545;
+        }
+        .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #dc3545;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #6c757d;
+        }
+        .quantity-input {
+            width: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid mx-5">
+            <a class="navbar-brand" href="/">
+                <img src="/img/pelu2.png" alt="Pelu2 Logo" width="75">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/TuRepositorio.html">Tu Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Mascotas.html">Mascotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Refugios.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-dark me-2">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Refugios.html">Productos</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Comida de Perro</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Product Section -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Gallery Column -->
+            <div class="col-md-6">
+                <div class="mb-4 main-image">
+                    <img src="/img/Comidaperro.jpg" width="150%" class="img-fluid rounded" alt="Producto principal" id="mainImage">
+                </div>
+                <div class="row product-gallery">
+                    <div class="col-3">
+                        <img src="/img/Comidaperro.jpg" class="img-fluid rounded mb-2" alt="Miniatura 1" onclick="changeImage(this)">
+                    </div>
+                    <div class="col-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid rounded mb-2" alt="Miniatura 2" onclick="changeImage(this)">
+                    </div>
+                    <div class="col-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid rounded mb-2" alt="Miniatura 3" onclick="changeImage(this)">
+                    </div>
+                    <div class="col-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid rounded mb-2" alt="Miniatura 4" onclick="changeImage(this)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Column -->
+            <div class="col-md-6">
+                <span class="badge bg-success mb-2">En stock</span>
+                <span class="badge badge-custom mb-2">-20%</span>
+                
+                <h1>Comida de Perro</h1>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="me-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                    </div>
+                    <span class="text-muted">(42 reseñas)</span>
+                    <a href="#reviewsy" class="ms-3">Ver reseñas</a>
+                </div>
+                
+                <div class="mb-4">
+                    <span class="price">$5.99</span>
+                    <span class="old-price ms-2">$8.99</span>
+                </div>
+                
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ex perferendis ratione voluptatem temporibus? Dicta aliquid, placeat assumenda, doloremque magni expedita voluptate, praesentium dolorem doloribus laborum quaerat hic quidem enim?</p>
+                
+                
+                <div class="d-flex align-items-center mb-4">
+                    <div class="me-3">
+                        <label for="quantity" class="form-label">Cantidad:</label>
+                    </div>
+                    <div class="input-group" style="width: 150px;">
+                        <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        <input type="number" class="form-control text-center quantity-input" value="1" min="1" max="10" id="quantity">
+                        <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                    </div>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex mb-4">
+                    <button class="btn btn-primary btn-lg flex-grow-1">
+                        <i class="fas fa-shopping-cart me-2"></i>Añadir al carrito
+                    </button>
+                    <button class="btn btn-outline-secondary btn-lg">
+                        <i class="far fa-heart me-2"></i>Lista de deseos
+                    </button>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <i class="fas fa-truck fa-2x text-muted"></i>
+                            </div>
+                            <div>
+                                <h5 class="card-title">Envío rápido y gratuito</h5>
+                                <p class="card-text">Recíbelo en 1-2 días hábiles. Envío gratuito en pedidos superiores a $50.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Description and Details -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Descripción</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Reseñas (42)</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-3 border border-top-0 rounded-bottom" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <h4>Descripción detallada</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime animi asperiores ex quae. Facere illo at, fugit impedit nihil animi neque iste vel pariatur distinctio mollitia, asperiores in ullam ex.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolores nisi beatae inventore earum cupiditate. Ullam, officia ipsam mollitia excepturi, qui eos cupiditate sed alias corporis, omnis placeat repudiandae ex!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus mollitia facilis, corporis quisquam suscipit. Ratione, aut doloribus similique dolorum incidunt quos accusantium omnis delectus cupiditate repellat vitae asperiores nihil?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusamus eaque animi perspiciatis. Obcaecati enim, et veritatis quaerat libero fugit, impedit minus doloremque optio maxime tenetur corporis, maiores esse dolore.</p>
+                    </div>
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <h4>Reseñas de clientes</h4>
+                        <div class="row mb-4">
+                            <div class="col-md-4 text-center">
+                                <h1 class="display-4">4.7</h1>
+                                <div class="mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                </div>
+                                <p class="text-muted">Basado en 42 reseñas</p>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="mb-2">
+                                    <span class="me-2">5 estrellas</span>
+                                    <div class="progress" style="height: 20px; width: 70%">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"></div>
+                                    </div>
+                                    <span class="ms-2">75%</span>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="me-2">4 estrellas</span>
+                                    <div class="progress" style="height: 20px; width: 70%">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 15%"></div>
+                                    </div>
+                                    <span class="ms-2">15%</span>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="me-2">3 estrellas</span>
+                                    <div class="progress" style="height: 20px; width: 70%">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 5%"></div>
+                                    </div>
+                                    <span class="ms-2">5%</span>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="me-2">2 estrellas</span>
+                                    <div class="progress" style="height: 20px; width: 70%">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 3%"></div>
+                                    </div>
+                                    <span class="ms-2">3%</span>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="me-2">1 estrella</span>
+                                    <div class="progress" style="height: 20px; width: 70%">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 2%"></div>
+                                    </div>
+                                    <span class="ms-2">2%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h5>Excelente comida para mi perro</h5>
+                                <div>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted">Por Juan Pérez el 15/06/2023</p>
+                            <p>Esta comida superó todas mis expectativas. A mi labrador le encanta el sabor, su pelaje está más brillante que nunca y tiene mucha más energía. Lo recomiendo totalmente para dueños de perros activos.</p>
+                        </div>
+                        
+                        <div class="review mt-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h5>Muy buena calidad, pero...</h5>
+                                <div>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted">Por María Gómez el 02/06/2023</p>
+                            <p>La comida es de excelente calidad y a mi perro le gusta mucho, pero me parece un poco cara comparada con otras marcas. Los ingredientes son premium y se nota en la digestión de mi golden retriever. El tamaño del paquete es adecuado para un mes.</p>
+                        </div>
+                        <hr>
+                        <div class="mb-4">
+                            <h3>Escribe una reseña</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Calificación</label>
+                                    <div class="rating">
+                                        <i class="far fa-star" data-rating="1"></i>
+                                        <i class="far fa-star" data-rating="2"></i>
+                                        <i class="far fa-star" data-rating="3"></i>
+                                        <i class="far fa-star" data-rating="4"></i>
+                                        <i class="far fa-star" data-rating="5"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewTitle" class="form-label">Título</label>
+                                    <input type="text" class="form-control" id="reviewTitle">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewText" class="form-label">Tu reseña</label>
+                                    <textarea class="form-control" id="reviewText" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar reseña</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Related Products -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-4">Productos relacionados</h3>
+                <div class="row">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/img/Comidagato.jpg" class="card-img-top" alt="Producto relacionado">
+                            <div class="card-body">
+                                <h5 class="card-title">Comida de Gato</h5>
+                                <div class="mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                                <p class="card-text price">$4.99 <span class="old-price">$6.99</span></p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <button class="btn btn-sm btn-outline-primary">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/img/juguete2.jpg" class="card-img-top" alt="Producto relacionado">
+                            <div class="card-body">
+                                <h5 class="card-title">Catnip</h5>
+                                <div class="mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                </div>
+                                <p class="card-text price">$2.5</p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <button class="btn btn-sm btn-outline-primary">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/img/aseo1.jpg" class="card-img-top" alt="Producto relacionado">
+                            <div class="card-body">
+                                <h5 class="card-title">Perfume para Mascota</h5>
+                                <div class="mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="card-text price">$5.99</p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <button class="btn btn-sm btn-outline-primary">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/img/juguete1.jpg" class="card-img-top" alt="Producto relacionado">
+                            <div class="card-body">
+                                <h5 class="card-title">Chillones</h5>
+                                <div class="mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                                <p class="card-text price">$2.99 <span class="old-price">$4.99</span></p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <button class="btn btn-sm btn-outline-primary">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Pelu2</h5>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="mx-auto">
+                        <li style="list-style-type: none;">
+                            <a href="/TuRepositorio.html">Tu Perfil</a>
+                        </li>
+                        <li style="list-style-type: none;">
+                            <a href="/Mascotas.html">Mascotas</a>
+                        </li>
+                        <li style="list-style-type: none;">
+                            <a href="/Refugios.html">Productos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="mx-auto">
+                        <li style="list-style-type: none;">
+                            <a href="/Contacto.html">Contacto</a>
+                        </li>
+                        <li style="list-style-type: none;">FAQ</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 marcas">
+                    <span>
+                        <img src="/img/GooglePlay.png" alt="PlayStore" width="100px">
+                    </span>
+                    <br>
+                    <span>
+                        <img src="/img/AppStore.png" alt="AppStore" width="100px">
+                    </span>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="d-flex justify-content-center">
+                    <p>© Pelu2 - 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cambiar imagen principal al hacer clic en miniaturas
+        function changeImage(element) {
+            document.getElementById('mainImage').src = element.src;
+        }
+        
+        // Incrementar/decrementar cantidad
+        document.getElementById('increment').addEventListener('click', function() {
+            var quantity = document.getElementById('quantity');
+            if(parseInt(quantity.value) < 10) {
+                quantity.value = parseInt(quantity.value) + 1;
+            }
+        });
+        
+        document.getElementById('decrement').addEventListener('click', function() {
+            var quantity = document.getElementById('quantity');
+            if(parseInt(quantity.value) > 1) {
+                quantity.value = parseInt(quantity.value) - 1;
+            }
+        });
+        
+        // Sistema de valoración con estrellas
+        document.querySelectorAll('.rating i').forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-rating');
+                const stars = this.parentElement.querySelectorAll('i');
+                
+                stars.forEach((s, index) => {
+                    if(index < rating) {
+                        s.classList.remove('far');
+                        s.classList.add('fas');
+                    } else {
+                        s.classList.remove('fas');
+                        s.classList.add('far');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
